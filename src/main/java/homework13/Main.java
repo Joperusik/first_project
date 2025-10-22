@@ -9,6 +9,10 @@ public class Main {
         //Зчитати з клавіатури розмір масиву n. (n x m - для сміливих)
         System.out.print("Enter the number of elements in the array: ");
         int arrLength = scanner.nextInt(); // масив будет равен числу который мы ввели
+        if (arrLength <= 0) {
+            System.out.println("Please enter a positive integer");
+            return;
+        }
         int[] arr = new int[arrLength];
         //Створити масив цілих чисел і заповнити його даними користувача.
         for (int i = 0; i < arrLength; i++) {
