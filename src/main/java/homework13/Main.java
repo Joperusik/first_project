@@ -16,7 +16,7 @@ public class Main {
         int[] arr = new int[arrLength];
         //Створити масив цілих чисел і заповнити його даними користувача.
         for (int i = 0; i < arrLength; i++) {
-            System.out.print("Enter element " + i + ": "); // (i + 1) для того что бы
+            System.out.print("Enter element " + i + ": ");
             arr[i] = scanner.nextInt();
         }
         boolean end = true;
