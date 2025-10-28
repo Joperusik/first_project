@@ -46,4 +46,22 @@ public class Dragon {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
+    //voice
+    public void voice() {
+        System.out.println("*Dragons cant talk*");
+    }
+
+    //fire
+    public void fire() {
+        System.out.println("🔥🔥🔥🔥");
+    }
+
+    public String toString() {
+        return "Dragon " +
+                "Name = " + name +
+                ", Age = " + age +
+                ", Weight = " + weight
+                ;
+    }
 }

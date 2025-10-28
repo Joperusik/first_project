@@ -26,9 +26,9 @@ public class Main {
             sc.nextLine();
 
             System.out.println();
-            System.out.println("Name: " + dragon.getName());
-            System.out.println("Age: " + dragon.getAge());
-            System.out.println("Weight: " + dragon.getWeight());
+            System.out.println(dragon);
+            dragon.voice();
+            dragon.fire();
             System.out.println();
         }
     }
