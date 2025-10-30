@@ -12,6 +12,7 @@ public class Main {
         sc.nextLine();
         for (int i = 0; i < dragonCount; i++) {
             Dragon dragon = new Dragon();
+            dragon.setBreed(Breed.VHAGAR);
 
             System.out.print("Enter Dragon's name: ");
             dragon.setName(sc.nextLine());
@@ -19,7 +20,6 @@ public class Main {
             System.out.print("Enter Dragon's age: ");
             dragon.setAge(sc.nextInt());
             sc.nextLine();
-
 
             System.out.print("Enter Dragon's weight: ");
             dragon.setWeight(sc.nextDouble());
