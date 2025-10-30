@@ -4,6 +4,7 @@ public class Dragon {
     private String name;
     private int age;
     private double weight;
+    private Breed breed;
 
     public Dragon() {
         System.out.println("without constructor");
@@ -47,6 +48,15 @@ public class Dragon {
         this.weight = weight;
     }
 
+    //Breed
+    public Breed getBreed() {
+        return breed;
+    }
+
+    public void setBreed(Breed breed) {
+        this.breed = breed;
+    }
+
     //voice
     public void voice() {
         System.out.println("*Dragons cant talk*");
@@ -61,7 +71,7 @@ public class Dragon {
         return "Dragon " +
                 "Name = " + name +
                 ", Age = " + age +
-                ", Weight = " + weight
-                ;
+                ", Weight = " + weight +
+                ", Breed = " + breed;
     }
 }
