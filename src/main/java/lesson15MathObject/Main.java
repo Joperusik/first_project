@@ -30,5 +30,8 @@ public class Main {
 
         double round1 = MyMath.round(4.5);
         System.out.println("round1: " + round1);
+
+        int n = 4;
+        MyMath.getFactorial(n);
     }
 }
