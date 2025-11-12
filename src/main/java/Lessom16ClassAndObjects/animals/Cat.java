@@ -1,5 +1,7 @@
 package Lessom16ClassAndObjects.animals;
 
+import java.util.Objects;
+
 public class Cat {
     private String name;
     private int age;
@@ -44,5 +46,31 @@ public class Cat {
 
     public String toString() {
         return "Name " + this.name + ", Age " + this.age + ", Weight " + this.weight;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null) {
+            return false;
+        }
+        if (!(obj instanceof Cat))
+            return false;
+
+        Cat otherCat = (Cat) obj;
+
+//        if (this.name == null)
+//            return otherCat.name == null;
+        if(this.name == null) {
+        }
+
+        return this.age == otherCat.age
+                && this.weight == otherCat.weight;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, weight);
     }
 }
