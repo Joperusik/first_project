@@ -2,12 +2,12 @@ package Lessom16ClassAndObjects;
 
 import Lessom16ClassAndObjects.animals.Cat;
 import Lessom16ClassAndObjects.animals.Fox;
+import Lessom16ClassAndObjects.util.Grooming;
 
 public class Main2 {
     static void main() {
         Fox fox = new Fox();
         Cat cat = new Cat();
-
 
         cat.setName("Cat");
         cat.setAge(18);
@@ -18,5 +18,8 @@ public class Main2 {
         fox.setAge(30);
         fox.setWeight(1.5);
         fox.voice();
+
+        Grooming groomingSalon = new Grooming("Salon");
+        groomingSalon.groom(cat);
     }
 }
