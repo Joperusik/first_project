@@ -3,10 +3,19 @@ package homework30.Interface;
 import homework30.Interface.Exceptions.StackEmptyException;
 import homework30.Interface.Exceptions.StackFullException;
 
+import java.util.Optional;
+
 public class Stack implements Stackable {
     private int maxSize;
     private int top;
     private int[] stackArray;
+
+    public Optional<Integer> getOptional() {
+        if (stackIsEmpty()) {
+            return Optional.empty();
+        }
+        return Optional.of(removeFromStack());
+    }
 
     public Stack(int maxSize) {
         this.maxSize = maxSize;
