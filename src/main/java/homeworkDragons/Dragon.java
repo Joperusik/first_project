@@ -1,5 +1,7 @@
 package homeworkDragons;
 
+import java.util.Objects;
+
 public class Dragon {
     private String name;
     private int age;
@@ -73,5 +75,33 @@ public class Dragon {
                 ", Age = " + age +
                 ", Weight = " + weight +
                 ", Breed = " + breed;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+
+        if (obj == null) return false;
+
+        if (getClass() != obj.getClass()) return false;
+
+        Dragon other = (Dragon) obj;
+
+        if (name == null) {
+            if (other.name != null) return false;
+        } else if (!name.equals(other.name)) return false;
+
+        if (age != other.age) return false;
+
+        if (Double.compare(weight, other.weight) != 0) return false;
+
+        if (breed != other.breed) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, weight, breed);
     }
 }
