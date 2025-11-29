@@ -1,5 +1,7 @@
 package homework30.Interface;
 
+import java.util.Optional;
+
 public interface Stackable {
 
     boolean stackIsEmpty();
@@ -11,4 +13,6 @@ public interface Stackable {
     int removeFromStack();
 
     int displayUpperStack();
+
+    Optional<Integer> getOptional();
 }
