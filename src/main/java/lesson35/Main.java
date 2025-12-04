@@ -41,5 +41,23 @@ public class Main {
         String sentence3 = "today was a very great day a very nice weather and I was very happy";
         Map<String, Integer> wordsCount3 = wordUtils.getWordsCount(sentence3);
         System.out.println(wordsCount3);
+
+        NumberUtils numbers = new NumberUtils();
+        List<Integer> numbersList = new ArrayList<>();
+
+        numbersList.add(1);
+        numbersList.add(2);
+        numbersList.add(3);
+
+        System.out.println("getSum: " + numbers.getSum(numbersList));
+
+        List<Integer> numbersList2 = new ArrayList<>();
+
+        numbersList2.add(1);
+        numbersList2.add(2);
+        numbersList2.add(3);
+
+        System.out.println("multiplyOddNumber: " + numbers.multiplyOddNumber(numbersList2));
+
     }
 }
